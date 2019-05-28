@@ -5,33 +5,33 @@ import { vw } from 'react-native-expo-viewport-units';
 
 
 //Make a component
-const Header = (props) => {
+const OutfitHeader = (props) => {
 	const { textStyle, viewStyle } = styles; 
 
 	return (
 		<View style={viewStyle}>
-			<Text style={textStyle}>{ props.headerText }</Text>
+			<Text style={textStyle}>{ props.outfitHeaderText }</Text>
 		</View>
 	);
 };
 
 const styles = {
 	viewStyle: {
-		backgroundColor: '#F45F42',
+		backgroundColor: '#42C5F4',
 		justifyContent: 'center',
 		alignItems: 'center',
-        height: vw(15),
+        height: vw(7.5),
         width: vw(100),
         // marginVertical:5,
         overflow: 'hidden',
         // marginHorizontal: 10
 	},
 	textStyle: {
-		fontSize: 18
+		fontSize: 15
 	}
 };
 
 
 //Make componenet available to other parts of the app
-export default Header;
+export default OutfitHeader;
 
