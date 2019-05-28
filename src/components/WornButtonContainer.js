@@ -1,14 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
+import WornButton from './WornButton';
 
-
-const WornButtonContainer = (props) => {
-	const { textStyle, viewStyle } = styles; 
+const WornButtonContainer = () => {
+	const { viewStyle } = styles; 
 
 	return (
 		<View style={viewStyle}>
-			<Text style={textStyle}>{ props.wornButtonContainerText }</Text>
+			<WornButton />
 		</View>
 	);
 };

@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
+import Bottoms from './Bottoms';
 
 
-const BottomsContainer = (props) => {
-	const { textStyle, viewStyle } = styles; 
+const BottomsContainer = () => {
+	const { viewStyle } = styles; 
 
 	return (
 		<View style={viewStyle}>
-			<Text style={textStyle}>{ props.bottomsContainerText }</Text>
+			<Bottoms />
 		</View>
 	);
 };

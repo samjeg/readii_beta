@@ -1,14 +1,15 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
+import Top from './Top';
 
 
-const TopContainer = (props) => {
-	const { textStyle, viewStyle } = styles; 
+const TopContainer = () => {
+	const { viewStyle } = styles; 
 
 	return (
 		<View style={viewStyle}>
-			<Text style={textStyle}>{ props.topContainerText }</Text>
+			<Top />
 		</View>
 	);
 };
@@ -18,11 +19,9 @@ const styles = {
 		backgroundColor: '#F45C42',
 		justifyContent: 'center',
 		alignItems: 'center',
-        height: vw(40),
+        height: vw(41),
         width: vw(100),
-        // marginVertical:5,
         overflow: 'hidden',
-        // marginHorizontal: 10
 	},
 	textStyle: {
 		fontSize: 18
