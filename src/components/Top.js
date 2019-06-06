@@ -17,10 +17,7 @@ class Top extends Component {
     render() {
         return (
             <View style={this.state.topStyle}>
-                <Image 
-                    source={imagePath} 
-                    style={this.state.topImageStyle}
-                /> 
+                {this.props.children}
             </View>
         );
     }

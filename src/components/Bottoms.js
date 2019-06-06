@@ -1,16 +1,18 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
 
-const Bottoms = () => {
-	const { textStyle, viewStyle } = styles; 
+class Bottoms extends Component {
+ 
 
-	return (
-		<View style={viewStyle}>
-			<Text style={textStyle}> Dude </Text>
-		</View>
-	);
-};
+	render() {
+		return (
+			<View style={styles.viewStyle}>
+				{this.props.children}
+			</View>
+		);
+	}
+}
 
 const styles = {
 	viewStyle: {

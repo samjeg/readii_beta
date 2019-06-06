@@ -9,10 +9,7 @@ class Tie extends Component {
     render() {
         return (
             <TouchableHighlight style={styles.tieStyle}>
-                <Image 
-                    source={imagePath} 
-                    style={styles.imageStyle}
-                /> 
+                {this.props.children} 
             </TouchableHighlight>
         );
     }

@@ -9,10 +9,7 @@ class Wrist extends Component {
     render() {
         return (
             <TouchableHighlight style={styles.wristStyle}>
-                <Image 
-                    source={imagePath} 
-                    style={styles.imageStyle}
-                /> 
+                {this.props.children} 
             </TouchableHighlight>
         );
     }

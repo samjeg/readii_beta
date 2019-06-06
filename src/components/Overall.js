@@ -17,10 +17,7 @@ class Overall extends Component {
     render() {
         return (
             <View style={this.state.overallStyle}>
-                <Image 
-                    source={imagePath} 
-                    style={this.state.overallImageStyle}
-                /> 
+                {this.props.children}
             </View>
         );
     }

@@ -16,7 +16,7 @@ class JacketAlternate extends Component {
 	render() {
 		return (
 			<View style={this.state.jacketStyle}>
-				<Text style={this.state.jacketTextStyle}> Yo! </Text>
+				{this.props.children}
 			</View>
 		);
 	}

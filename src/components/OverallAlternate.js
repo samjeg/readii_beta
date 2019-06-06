@@ -24,10 +24,7 @@ class OverallAlternate extends Component {
                 style={this.state.overallStyle}
                 onPress={() => this.setElevation()}
             >
-                <Image 
-                    source={imagePath} 
-                    style={this.state.overallImageStyle}
-                /> 
+                {this.props.children}
             </TouchableHighlight>
         );
     }

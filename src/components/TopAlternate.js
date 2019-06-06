@@ -24,10 +24,7 @@ class TopAlternate extends Component {
                 style={this.state.topStyle}
                 onPress={() => this.setElevation()}
             >
-                <Image 
-                    source={imagePath} 
-                    style={this.state.topImageStyle}
-                /> 
+                {this.props.children}
             </TouchableHighlight>
         );
     }

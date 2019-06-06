@@ -24,7 +24,7 @@ class Jacket extends Component {
 				style={this.state.jacketStyle}
 				onPress={() => this.setElevation()}
 			>
-				<Text style={this.state.jacketTextStyle}> Yo! </Text>
+				{this.props.children}
 			</TouchableHighlight>
 		);
 	}

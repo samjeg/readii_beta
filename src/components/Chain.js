@@ -2,17 +2,12 @@ import React, { Component } from 'react';
 import { TouchableHighlight, Image } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
 
-const imagePath = require('../../images/starNecklace.jpg');
-
 class Chain extends Component {
 
 	render() {
 		return (
 			<TouchableHighlight style={styles.viewStyle}>
-				<Image 
-					source={imagePath} 
-					style={styles.imageStyle}
-				/> 
+				{this.props.children}
 			</TouchableHighlight>
 		);
 	}
