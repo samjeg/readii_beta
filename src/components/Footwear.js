@@ -33,20 +33,26 @@ const styles = {
 		justifyContent: 'center',
 		alignItems: 'center',
         height: vw(30),
-        width: vw(20),
+        width: vw(25),
         marginHorizontal: vw(5),
         marginTop: vw(1),
         overflow: 'hidden',
+        borderWidth: 2,
+        borderColor: '#000',
+
 	},
 	sideViewStyle: {
 		backgroundColor: '#FFF',
 		justifyContent: 'center',
 		alignItems: 'center',
         height: vw(30),
-        width: vw(30),
+        width: vw(35),
         marginRight: vw(5),
         marginTop: vw(1),
         overflow: 'hidden',
+        borderWidth: 2,
+        borderColor: '#000',
+
 	},
 	ankleStyle: {
 		backgroundColor: '#FFF',
@@ -56,8 +62,11 @@ const styles = {
         width: vw(20),
         marginTop: vw(10),
         marginBottom: vw(5),
-        marginLeft: vw(7),
+        marginLeft: vw(0),
         overflow: 'hidden',
+        borderWidth: 2,
+        borderColor: '#000',
+
 	},
 	viewStyle: {
 		backgroundColor: '#5CF442',

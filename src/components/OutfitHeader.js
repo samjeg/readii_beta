@@ -17,14 +17,14 @@ const OutfitHeader = (props) => {
 
 const styles = {
 	viewStyle: {
+		position: 'absolute',
 		backgroundColor: '#42C5F4',
 		justifyContent: 'center',
 		alignItems: 'center',
         height: vw(7.5),
         width: vw(100),
-        // marginVertical:5,
         overflow: 'hidden',
-        // marginHorizontal: 10
+        marginTop: vw(15)
 	},
 	textStyle: {
 		fontSize: 15

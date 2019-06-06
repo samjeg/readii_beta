@@ -13,6 +13,7 @@ const WornButton = () => {
 
 const styles = {
 	viewStyle: {
+		position: 'absolute',
 		backgroundColor: '#FFF',
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -20,6 +21,9 @@ const styles = {
         width: vw(14),
         borderRadius: vw(14) / 2,
         marginLeft: vw(75),
+        borderWidth: 2,
+        borderColor: '#000',
+        marginTop: vw(37),
         overflow: 'hidden',
 	},
 	textStyle: {

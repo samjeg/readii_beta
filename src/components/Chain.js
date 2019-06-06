@@ -20,18 +20,21 @@ class Chain extends Component {
 
 const styles = {
 	viewStyle: {
+		position: 'absolute',
 		backgroundColor: '#FFF',
 		justifyContent: 'center',
 		alignItems: 'center',
         height: vw(9),
         width: vw(80),
-        // marginVertical:5,
+        marginHorizontal: vw(10),
+        marginTop: vw(26),
         overflow: 'hidden',
-        // marginHorizontal: 10
 	},
 	imageStyle: {
 		height: '100%',
-		width: '100%'
+		width: '100%',
+		borderWidth: 2,
+        borderColor: '#000',
 	}
 };
 

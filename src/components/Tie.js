@@ -4,11 +4,11 @@ import { vw } from 'react-native-expo-viewport-units';
 
 const imagePath = require('../../images/starNecklace.jpg');
 
-class Top extends Component {
+class Tie extends Component {
 
     render() {
         return (
-            <TouchableHighlight style={styles.topStyle}>
+            <TouchableHighlight style={styles.tieStyle}>
                 <Image 
                     source={imagePath} 
                     style={styles.imageStyle}
@@ -19,17 +19,16 @@ class Top extends Component {
 }
 
 const styles = {
-    topStyle: {
+     tieStyle: {
         position: 'absolute',
-        backgroundColor: '#5942F4',
+        backgroundColor: '#FFF',
         justifyContent: 'center',
         alignItems: 'center',
         height: vw(40),
-        width: vw(30),
+        width: vw(10),
         marginTop: vw(53),
-        marginLeft: vw(50),
+        marginLeft: vw(5),
         overflow: 'hidden',
-        elevation: 20,
     },
     imageStyle: {
         height: '100%',
@@ -39,5 +38,5 @@ const styles = {
     }
 };
 
-export default Top;
+export default Tie;
 

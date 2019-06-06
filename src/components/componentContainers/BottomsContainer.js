@@ -1,24 +1,23 @@
 import React from 'react';
 import { View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
-import Footwear from './Footwear';
 
-const FootwearContainer = () => {
+const BottomsContainer = (props) => {
 	const { viewStyle } = styles; 
 
 	return (
 		<View style={viewStyle}>
-			<Footwear />
+			{props.children}
 		</View>
 	);
 };
 
 const styles = {
 	viewStyle: {
-		backgroundColor: '#5CF442',
+		backgroundColor: '#5942F4',
 		justifyContent: 'center',
 		alignItems: 'center',
-        height: vw(31),
+        height: vw(35),
         width: vw(100),
         overflow: 'hidden',
 	},
@@ -27,5 +26,5 @@ const styles = {
 	}
 };
 
-export default FootwearContainer;
+export default BottomsContainer;
 
