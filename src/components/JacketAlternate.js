@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import { Text, TouchableHighlight } from 'react-native';
+import { Text, View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
 
 
-class Jacket extends Component {
+class JacketAlternate extends Component {
 	
 	constructor(props) {
 		super(props);
@@ -13,19 +13,11 @@ class Jacket extends Component {
 		};
 	}
 
-	setElevation() {
-		console.log('jacket set elevation');
-		this.props.onClick();
-	}
-
 	render() {
 		return (
-			<TouchableHighlight 
-				style={this.state.jacketStyle}
-				onPress={() => this.setElevation()}
-			>
+			<View style={this.state.jacketStyle}>
 				<Text style={this.state.jacketTextStyle}> Yo! </Text>
-			</TouchableHighlight>
+			</View>
 		);
 	}
 }
@@ -52,5 +44,5 @@ let styles = function (localElevation) {
 	});
 };
 
-export default Jacket;
+export default JacketAlternate;
 

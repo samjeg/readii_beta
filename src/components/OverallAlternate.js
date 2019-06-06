@@ -1,34 +1,41 @@
 import React, { Component } from 'react';
-import { View, Image } from 'react-native';
+import { TouchableHighlight, Image } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
 
 const imagePath = require('../../images/starNecklace.jpg');
 
-class Top extends Component {
+class OverallAlternate extends Component {
 
     constructor(props) {
         super(props);
         this.state = { 
-            topStyle: styles(this.props.elevation).topStyle,
-            topImageStyle: styles(this.props.elevation).imageStyle,
+            overallStyle: styles(this.props.elevation).overallStyle,
+            overallImageStyle: styles(this.props.elevation).imageStyle,
         };
+    }
+
+    setElevation() {
+        this.props.onClick();
     }
 
     render() {
         return (
-            <View style={this.state.topStyle}>
+            <TouchableHighlight 
+                style={this.state.overallStyle}
+                onPress={() => this.setElevation()}
+            >
                 <Image 
                     source={imagePath} 
-                    style={this.state.topImageStyle}
+                    style={this.state.overallImageStyle}
                 /> 
-            </View>
+            </TouchableHighlight>
         );
     }
 }
 
 let styles = function (localElevation) {
     return ({
-        topStyle: {
+        overallStyle: {
             position: 'absolute',
             backgroundColor: '#5942F4',
             justifyContent: 'center',
@@ -36,7 +43,7 @@ let styles = function (localElevation) {
             height: vw(40),
             width: vw(30),
             marginTop: vw(53),
-            marginLeft: vw(50),
+            marginLeft: vw(17.5),
             overflow: 'hidden',
             elevation: localElevation,
         },
@@ -49,5 +56,5 @@ let styles = function (localElevation) {
     });
 }
 
-export default Top;
+export default OverallAlternate;
 

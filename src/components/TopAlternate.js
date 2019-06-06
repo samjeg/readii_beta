@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { View, Image } from 'react-native';
+import { TouchableHighlight, Image } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
 
 const imagePath = require('../../images/starNecklace.jpg');
 
-class Top extends Component {
+class TopAlternate extends Component {
 
     constructor(props) {
         super(props);
@@ -14,14 +14,21 @@ class Top extends Component {
         };
     }
 
+    setElevation() {
+        this.props.onClick();
+    }
+
     render() {
         return (
-            <View style={this.state.topStyle}>
+            <TouchableHighlight 
+                style={this.state.topStyle}
+                onPress={() => this.setElevation()}
+            >
                 <Image 
                     source={imagePath} 
                     style={this.state.topImageStyle}
                 /> 
-            </View>
+            </TouchableHighlight>
         );
     }
 }
@@ -49,5 +56,5 @@ let styles = function (localElevation) {
     });
 }
 
-export default Top;
+export default TopAlternate;
 
