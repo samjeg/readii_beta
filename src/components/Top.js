@@ -29,7 +29,7 @@ const styles = {
         marginTop: vw(53),
         marginLeft: vw(50),
         overflow: 'hidden',
-        elevation: 20,
+        elevation: 0,
     },
     imageStyle: {
         height: '100%',

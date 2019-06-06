@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TouchableHighlight } from 'react-native';
-import { vw, vh } from 'react-native-expo-viewport-units';
+import { vw } from 'react-native-expo-viewport-units';
 
 
 const Jacket = () => {
@@ -15,18 +15,18 @@ const Jacket = () => {
 
 const styles = {
 	viewStyle: {
-		position: 'absolute',
+		// position: 'absolute',
 		backgroundColor: '#FFF',
 		justifyContent: 'center',
 		alignItems: 'center',
-        height: vw(41),
-        width: vw(50),
+        height: vw(60),
+        width: vw(42.5),
         overflow: 'hidden',
         elevation: 10,
         borderColor: '#000',
         borderWidth: 2,
-        marginTop: vh(30),
-        marginHorizontal: vw(25),
+        marginTop: vw(43),
+        marginLeft: vw(27.5),
 	},
 	textStyle: {
 		fontSize: 18

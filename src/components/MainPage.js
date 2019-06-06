@@ -41,8 +41,7 @@ class MainPage extends Component {
 				<TopViewFootwear />
 				<SideViewFootwear />
 				<Ankle />
-				{/*
-				<Jacket />*/}
+				<Jacket />
 			</View>
 		);
 	}
