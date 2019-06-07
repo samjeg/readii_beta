@@ -67,6 +67,10 @@ class MainPage extends Component {
 					height={vw(40)} 
 					width={vw(30)} 
 					imagePath={jumperPic} 
+					symbolFontsize={vw(13)}
+					symbolMarginTop={vw(11)}
+					symbolWidth={vw(13)}
+					symbolHeight={vw(14)}
 				/>
 			</Overall>);
 			third = (<Top
@@ -75,7 +79,11 @@ class MainPage extends Component {
 				<Panel
 					height={vw(40)} 
 					width={vw(30)} 
-					imagePath={tShirtPic} 
+					imagePath={tShirtPic}
+					symbolFontsize={vw(13)}
+					symbolMarginTop={vw(11)}
+					symbolWidth={vw(13)}
+					symbolHeight={vw(14)}
 				/>
 			</Top>);								
 		} else {
@@ -113,7 +121,11 @@ class MainPage extends Component {
 				<Panel
 					width={vw(42.5)} 
 					height={vw(45)} 
-					imagePath={jacketPic} 
+					imagePath={jacketPic}
+					symbolFontsize={vw(13)}
+					symbolMarginTop={vw(11)}
+					symbolWidth={vw(13)}
+					symbolHeight={vw(14)} 
 				/>
 			</JacketAlternate>);
 		}
@@ -126,6 +138,10 @@ class MainPage extends Component {
 						height={vw(9)} 
 						width={vw(80)} 
 						imagePath={chainPic} 
+						symbolFontsize={vw(11)}
+						symbolMarginTop={vw(-3.2)}
+						symbolWidth={vw(11)}
+						symbolHeight={vw(12)}
 					/>
 				</Chain>	
 				<WornButton />
@@ -133,7 +149,11 @@ class MainPage extends Component {
 					<Panel
 						height={vw(40)} 
 						width={vw(10)} 
-						imagePath={tiePic} 
+						imagePath={tiePic}
+						symbolFontsize={vw(13)}
+						symbolMarginTop={vw(11)}
+						symbolWidth={vw(13)}
+						symbolHeight={vw(14)} 
 					/>
 				</Tie>
 				<Wrist>
@@ -141,6 +161,10 @@ class MainPage extends Component {
 						height={vw(17)} 
 						width={vw(10)} 
 						imagePath={watchPic} 
+						symbolFontsize={vw(11)}
+						symbolMarginTop={vw(0)}
+						symbolWidth={vw(11)}
+						symbolHeight={vw(12)}
 					/>
 				</Wrist>
 				<Bottoms>
@@ -148,13 +172,21 @@ class MainPage extends Component {
 						height={vw(28)} 
 						width={vw(80)} 
 						imagePath={trousersPic} 
+						symbolFontsize={vw(13)}
+						symbolMarginTop={vw(5.2)}
+						symbolWidth={vw(13)}
+						symbolHeight={vw(14)}
 					/>
 				</Bottoms>
 				<TopViewFootwear>
 					<Panel
 						height={vw(30)} 
 						width={vw(25)} 
-						imagePath={topViewTrainerPic} 
+						imagePath={topViewTrainerPic}
+						symbolFontsize={vw(13)}
+						symbolMarginTop={vw(5.5)}
+						symbolWidth={vw(13)}
+						symbolHeight={vw(14)} 
 					/>
 				</TopViewFootwear>
 				<SideViewFootwear>
@@ -162,13 +194,21 @@ class MainPage extends Component {
 						height={vw(30)} 
 						width={vw(35)} 
 						imagePath={sideViewTrainerPic} 
+						symbolFontsize={vw(13)}
+						symbolMarginTop={vw(5.5)}
+						symbolWidth={vw(13)}
+						symbolHeight={vw(14)}
 					/>
 				</SideViewFootwear>
 				<Ankle>
 					<Panel
 						height={vw(10)} 
 						width={vw(20)} 
-						imagePath={ankleBraceletPic} 
+						imagePath={ankleBraceletPic}
+						symbolFontsize={vw(11)}
+						symbolMarginTop={vw(-2.9)}
+						symbolWidth={vw(11)}
+						symbolHeight={vw(12)} 
 					/>
 				</Ankle>
 				{ first }
@@ -180,4 +220,5 @@ class MainPage extends Component {
 }
 
 export default MainPage;
+
 

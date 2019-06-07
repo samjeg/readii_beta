@@ -11,7 +11,7 @@ import { vw } from 'react-native-expo-viewport-units';
 
 // const sadImagePath = require('./images/happy.png');
 
-const Panel = ({ width, height, imagePath }) => {
+const Panel = ({ width, height, imagePath, symbolFontsize, symbolMarginTop, symbolHeight, symbolWidth }) => {
 	return (
 		<View style={styles(width, height).viewStyle}>
 			<ImageBackground 
@@ -22,15 +22,21 @@ const Panel = ({ width, height, imagePath }) => {
 					onPress={() => console.log('Hello Page Image')} 
 					style={styles(width, height).touchStyle}
 				>
-					<TouchableWithoutFeedback 
-						style={styles(width, height).buttonContainerStyle} 
+					{/* <TouchableWithoutFeedback 
+					// 	style={styles(width, height).buttonContainerStyle} 
+					// >
+					// 	<TouchableOpacity 
+					// 		style={styles(width, height).buttonStyle}
+					// 		onPress={() => console.log('Button pressed')}
+					// 	/>
+					// </TouchableWithoutFeedback>*/}
+					<Text style={symbolStyles(
+							symbolFontsize, 
+							symbolMarginTop, 
+							symbolWidth, 
+							symbolHeight
+						).imageStyle}
 					>
-						<TouchableOpacity 
-							style={styles(width, height).buttonStyle}
-							onPress={() => console.log('Button pressed')}
-						/>
-					</TouchableWithoutFeedback>
-					<Text style={styles(width, height).imageStyle}>
 						☹
 					</Text>
 				</TouchableOpacity>
@@ -56,7 +62,7 @@ let styles = function (wd, hgt) {
 			borderColor: '#000',
 			justifyContent: 'center',
 			alignItems: 'center',
-			overflow: 'hidden'
+			overflow: 'hidden',
 		},
 		touchStyle: {
 			width: wd,
@@ -78,15 +84,23 @@ let styles = function (wd, hgt) {
 			height: hgt / 3,
 			backgroundColor: '#000',
 		},
-		imageStyle: {
-		width: vw(15),
-		height: vw(15),
-		fontSize: vw(13),
-		textAlign: 'center',
-		color: '#000',
-		overflow: 'hidden'
-		},
    });
+};
+
+let symbolStyles = function (font, mrgn, wd, hgt) {
+    return ({
+		imageStyle: {
+			position: 'absolute',	
+			textAlign: 'center',
+			textAlignVertical: 'top',
+			color: '#000',
+			overflow: 'hidden',
+			marginTop: mrgn,	
+			width: wd,
+			height: hgt,
+			fontSize: font,
+		},
+	});
 };
 
 
