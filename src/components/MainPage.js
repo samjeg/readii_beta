@@ -66,9 +66,11 @@ class MainPage extends Component {
 				<Panel
 					height={vw(40)} 
 					width={vw(30)} 
-					imagePath={jumperPic} 
+					imagePath={jumperPic}
+					buttonMarginLeft={vw(60)} 
 					symbolFontsize={vw(13)}
-					symbolMarginTop={vw(11)}
+					symbolMarginTop={vw(10)}
+					symbolMarginLeft={vw(8.5)}
 					symbolWidth={vw(13)}
 					symbolHeight={vw(14)}
 				/>
@@ -80,8 +82,10 @@ class MainPage extends Component {
 					height={vw(40)} 
 					width={vw(30)} 
 					imagePath={tShirtPic}
+					buttonMarginLeft={vw(60)}
 					symbolFontsize={vw(13)}
-					symbolMarginTop={vw(11)}
+					symbolMarginTop={vw(10)}
+					symbolMarginLeft={vw(8.5)}
 					symbolWidth={vw(13)}
 					symbolHeight={vw(14)}
 				/>
@@ -122,8 +126,10 @@ class MainPage extends Component {
 					width={vw(42.5)} 
 					height={vw(45)} 
 					imagePath={jacketPic}
-					symbolFontsize={vw(13)}
-					symbolMarginTop={vw(11)}
+					buttonMarginLeft={vw(60)}
+					symbolFontsize={vw(13.5)}
+					symbolMarginTop={vw(13)}
+					symbolMarginLeft={vw(14.7)}
 					symbolWidth={vw(13)}
 					symbolHeight={vw(14)} 
 				/>
@@ -138,8 +144,10 @@ class MainPage extends Component {
 						height={vw(9)} 
 						width={vw(80)} 
 						imagePath={chainPic} 
+						buttonMarginLeft={vw(60)}
 						symbolFontsize={vw(11)}
 						symbolMarginTop={vw(-3.2)}
+						symbolMarginLeft={vw(35)}
 						symbolWidth={vw(11)}
 						symbolHeight={vw(12)}
 					/>
@@ -150,21 +158,25 @@ class MainPage extends Component {
 						height={vw(40)} 
 						width={vw(10)} 
 						imagePath={tiePic}
-						symbolFontsize={vw(13)}
+						buttonMarginLeft={vw(60)}
+						symbolFontsize={vw(12)}
 						symbolMarginTop={vw(11)}
-						symbolWidth={vw(13)}
-						symbolHeight={vw(14)} 
+						symbolMarginLeft={vw(-0.9)}
+						symbolWidth={vw(12)}
+						symbolHeight={vw(13)} 
 					/>
 				</Tie>
 				<Wrist>
 					<Panel
 						height={vw(17)} 
 						width={vw(10)} 
-						imagePath={watchPic} 
-						symbolFontsize={vw(11)}
-						symbolMarginTop={vw(0)}
-						symbolWidth={vw(11)}
-						symbolHeight={vw(12)}
+						imagePath={watchPic}
+						buttonMarginLeft={vw(60)} 
+						symbolFontsize={vw(10)}
+						symbolMarginTop={vw(1.5)}
+						symbolMarginLeft={vw(0)}
+						symbolWidth={vw(10)}
+						symbolHeight={vw(11)}
 					/>
 				</Wrist>
 				<Bottoms>
@@ -172,8 +184,10 @@ class MainPage extends Component {
 						height={vw(28)} 
 						width={vw(80)} 
 						imagePath={trousersPic} 
+						buttonMarginLeft={vw(60)}
 						symbolFontsize={vw(13)}
-						symbolMarginTop={vw(5.2)}
+						symbolMarginTop={vw(5.5)}
+						symbolMarginLeft={vw(35)}
 						symbolWidth={vw(13)}
 						symbolHeight={vw(14)}
 					/>
@@ -183,8 +197,10 @@ class MainPage extends Component {
 						height={vw(30)} 
 						width={vw(25)} 
 						imagePath={topViewTrainerPic}
+						buttonMarginLeft={vw(60)}
 						symbolFontsize={vw(13)}
-						symbolMarginTop={vw(5.5)}
+						symbolMarginTop={vw(6)}
+						symbolMarginLeft={vw(7)}
 						symbolWidth={vw(13)}
 						symbolHeight={vw(14)} 
 					/>
@@ -194,8 +210,10 @@ class MainPage extends Component {
 						height={vw(30)} 
 						width={vw(35)} 
 						imagePath={sideViewTrainerPic} 
+						buttonMarginLeft={vw(60)}
 						symbolFontsize={vw(13)}
-						symbolMarginTop={vw(5.5)}
+						symbolMarginTop={vw(6)}
+						symbolMarginLeft={vw(11)}
 						symbolWidth={vw(13)}
 						symbolHeight={vw(14)}
 					/>
@@ -205,10 +223,12 @@ class MainPage extends Component {
 						height={vw(10)} 
 						width={vw(20)} 
 						imagePath={ankleBraceletPic}
-						symbolFontsize={vw(11)}
-						symbolMarginTop={vw(-2.9)}
-						symbolWidth={vw(11)}
-						symbolHeight={vw(12)} 
+						buttonMarginLeft={vw(60)}
+						symbolFontsize={vw(10)}
+						symbolMarginTop={vw(-1.8)}
+						symbolMarginLeft={vw(4.8)}
+						symbolWidth={vw(10)}
+						symbolHeight={vw(11)} 
 					/>
 				</Ankle>
 				{ first }
