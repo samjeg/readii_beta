@@ -15,7 +15,10 @@ const Panel = ({
 				width, 
 				height, 
 				imagePath,
+				buttonMarginTop,
 				buttonMarginLeft,
+				buttonHeight,
+				buttonWidth,
 				symbolFontsize, 
 				symbolMarginTop, 
 				symbolMarginLeft,
@@ -33,21 +36,31 @@ const Panel = ({
 					style={styles(width, height).touchStyle}
 				>
 					<TouchableWithoutFeedback 
-						style={buttonStyles(width, height, buttonMarginLeft).buttonContainerStyle} 
+						style={buttonStyles(buttonWidth, buttonHeight, 0, 0).buttonContainerStyle} 
 					>
 						<TouchableOpacity 
-							style={buttonStyles(width, height, buttonMarginLeft).buttonStyle}
+							style={buttonStyles(buttonWidth, buttonHeight, 0, 0).buttonStyle}
 							onPress={() => console.log('Button pressed')}
 						/>
 					</TouchableWithoutFeedback>
-					{/*<TouchableWithoutFeedback 
-						style={styles(width, height).buttonRightContainerStyle} 
+					<TouchableWithoutFeedback 
+						style={buttonStyles(
+												buttonWidth, 
+												buttonHeight,
+												buttonMarginLeft,
+												buttonMarginTop 
+						).buttonContainerStyle} 
 					>
 						<TouchableOpacity 
-							style={styles(width, height).buttonRightStyle}
+							style={buttonStyles(
+												buttonWidth, 
+												buttonHeight,
+												buttonMarginLeft,
+												buttonMarginTop 
+							).buttonStyle} 
 							onPress={() => console.log('Button pressed')}
 						/>
-					</TouchableWithoutFeedback>*/}
+					</TouchableWithoutFeedback>
 					<Text style={symbolStyles(
 							symbolFontsize, 
 							symbolMarginLeft,
@@ -94,22 +107,23 @@ let styles = function (wd, hgt) {
    });
 };
 
-let buttonStyles = function (wd, hgt, mrgn) {
+let buttonStyles = function (wd, hgt, mrgnLft, mrgnTp) {
     return ({
 		buttonContainerStyle: {
 			position: 'absolute',	
-			width: wd / 6,
-			height: hgt / 3,
-			// justifyContent: 'center',
-			// alignItems: 'center',
+			width: wd,
+			height: hgt,
 			overflow: 'hidden',
-			marginLeft: mrgn,
+			marginTop: mrgnTp,
+			marginLeft: mrgnLft,
 			backgroundColor: '#F5942F4'
 		},
 		buttonStyle: {
-			width: wd / 6,
-			height: hgt / 3,
-			marginLeft: mrgn,
+			position: 'absolute',
+			width: wd,
+			height: hgt,
+			marginTop: mrgnTp,
+			marginLeft: mrgnLft,
 			backgroundColor: '#000',
 		},
     });
