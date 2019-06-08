@@ -1,18 +1,23 @@
 import React from 'react';
-import { View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 import { vw } from 'react-native-expo-viewport-units';
 
 
 const WornButton = () => {
-	const { viewStyle } = styles; 
+	const { outerCircleStyle, innerCircleStyle } = styles; 
 
 	return (
-		<View style={viewStyle} />
+		<View style={outerCircleStyle}>
+			<TouchableOpacity 
+				onPress={() => console.log('Worn button pressed')} 
+				style={innerCircleStyle} 
+			/>
+		</View>
 	);
 };
 
 const styles = {
-	viewStyle: {
+	outerCircleStyle: {
 		position: 'absolute',
 		backgroundColor: '#FFF',
 		justifyContent: 'center',
@@ -25,6 +30,14 @@ const styles = {
         borderColor: '#000',
         marginTop: vw(37),
         overflow: 'hidden',
+	},
+	innerCircleStyle: {
+		backgroundColor: '#000',
+        height: vw(12),
+        width: vw(12),
+        borderRadius: vw(12) / 2,
+        borderWidth: 2,
+        borderColor: '#000',
 	},
 	textStyle: {
 		fontSize: 18
