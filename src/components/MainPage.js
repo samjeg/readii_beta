@@ -152,7 +152,7 @@ class MainPage extends Component {
 		}
 		return (
 			<View>
-				<Header headerText={'Menu'} />
+				<Header headerText={'Readii'} />
 				<OutfitHeader outfitHeaderText={'Name of the item'} />
 				<Chain>
 					<Panel

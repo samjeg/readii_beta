@@ -15,13 +15,16 @@ const checkedImage = require('../../images/checkedBackground.jpg');
 const Header = (props) => {
 	const { 
 		textStyle, 
+		text2Style,
 		viewStyle, 
 		onesieButtonOuter, 
 		onesieButtonInner,
 		dressButtonOuter,
 		dressButtonInner,
 		shareButton,
-		logoTextStyle 
+		logoTextStyle, 
+		dressTextStyle,
+		logoBackground
 	} = styles; 
 
 	return (
@@ -30,9 +33,11 @@ const Header = (props) => {
 				style={viewStyle}
 				source={checkedImage}
 			>
-				<Text style={logoTextStyle}>{ props.headerText }</Text>
+				<View style={logoBackground}>
+					<Text style={logoTextStyle}>{ props.headerText }</Text>
+				</View>
 				<View style={shareButton}>
-					<Text style={textStyle}>share</Text>
+					<Text style={text2Style}>share</Text>
 				</View>
 				<View style={onesieButtonOuter}>
 					<TouchableOpacity style={onesieButtonInner}>
@@ -41,7 +46,7 @@ const Header = (props) => {
 				</View>
 				<View style={dressButtonOuter}>
 					<TouchableOpacity style={dressButtonInner}>
-						<Text style={textStyle}>dress|dungarees</Text>
+						<Text style={dressTextStyle}>dress|dungarees</Text>
 					</TouchableOpacity>
 				</View>
 			</ImageBackground>
@@ -64,38 +69,58 @@ const styles = {
 	},
 	textStyle: {
 		fontSize: 18,
+		color: '#FFF',
+		textAlign: 'center',
+	},
+	dressTextStyle: {
+		fontSize: 12,
+		color: '#FFF',
+		textAlign: 'center',
+	},
+	text2Style: {
+		fontSize: 18,
 		color: '#000',
 		textAlign: 'center',
 	},
 	logoTextStyle: {
-		fontSize: 50,
+		fontSize: 22,
 		color: 'orange',
 		textAlign: 'center',
 		// borderColor: '#000',
 		// borderWidth: 2,
-		textShadowColor: '#000',
-		textShadowOffset: { width: 8, height: 8 },
-		elevation: 3,
-		backgroundColor: '#0000' 
+		// textShadowColor: '#000',
+		// textShadowOffset: { width: 8, height: 8 },
+		// elevation: 3,
+		// backgroundColor: '#0000' 
 		// invisible color
 		// background color must be set
+	},
+	logoBackground: {
+		height: vw(11),
+        width: vw(20),
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#000',
+        borderRadius: (vw(11) + vw(20)) / 2,
+        borderColor: '#FFF',
+        borderWidth: 2,
 	},
 	shareButton: {
 		height: vw(11),
         width: vw(20),
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FFF',
-        borderColor: '#000',
-        borderWidth: 2,
+        backgroundColor: '#0000FF',
         borderRadius: (vw(11) + vw(20)) / 2,
+		borderColor: '#000',
+        borderWidth: 2,
 	},
 	onesieButtonOuter: {
 		height: vw(11),
         width: vw(20),
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FFF',
+        backgroundColor: '#FF8000',
         borderColor: '#000',
         borderWidth: 2,
         borderRadius: (vw(11) + vw(20)) / 2,
@@ -103,28 +128,32 @@ const styles = {
 	onesieButtonInner: {
 		height: vw(8),
         width: vw(18),
-        backgroundColor: '#FFF',
+        backgroundColor: '#FF0000',
         borderColor: '#000',
         borderWidth: 2,
         borderRadius: (vw(8) + vw(18)) / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
 	},
 	dressButtonOuter: {
 		height: vw(11),
-        width: vw(25),
+        width: vw(30),
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#FFF',
+        backgroundColor: '#800080',
         borderColor: '#000',
         borderWidth: 2,
         borderRadius: (vw(11) + vw(25)) / 2,
 	},
 	dressButtonInner: {
 		height: vw(8),
-        width: vw(23),
-        backgroundColor: '#FFF',
+        width: vw(28),
+        backgroundColor: '#000',
         borderColor: '#000',
         borderWidth: 2,
         borderRadius: (vw(8) + vw(18)) / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
 	}
 
 };
