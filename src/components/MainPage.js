@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { vw } from 'react-native-expo-viewport-units';
+import { vw, vh } from 'react-native-expo-viewport-units';
 import Header from '../../src/components/Header';
 import OutfitHeader from '../../src/components/OutfitHeader';
 import Chain from '../../src/components/Chain';
@@ -178,7 +178,7 @@ class MainPage extends Component {
 						height={vw(40)} 
 						width={vw(10)} 
 						imagePath={tiePic}
-						buttonMarginTop={vw(30)} 
+						buttonMarginTop={vh(18.9)} 
 						buttonMarginLeft={vw(0)}
 						buttonWidth={vw(10)}
 						buttonHeight={vw(10)}

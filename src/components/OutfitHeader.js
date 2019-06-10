@@ -18,7 +18,7 @@ const OutfitHeader = (props) => {
 const styles = {
 	viewStyle: {
 		position: 'absolute',
-		backgroundColor: '#42C5F4',
+		backgroundColor: '#F8F8F8',
 		justifyContent: 'center',
 		alignItems: 'center',
         height: vw(7.5),
@@ -27,7 +27,9 @@ const styles = {
         marginTop: vw(15)
 	},
 	textStyle: {
-		fontSize: 15
+		fontSize: 15,
+		// fontWeight: 'bold',
+		color: '#000',
 	}
 };
 
