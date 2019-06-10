@@ -71,6 +71,8 @@ class MainPage extends Component {
 					buttonMarginLeft={vw(20)} 
 					buttonWidth={vw(10)}
 					buttonHeight={vw(10)}
+					panelLayout={'none'}
+					panelType={'none'}
 					symbolFontsize={vw(13)}
 					symbolMarginTop={vw(10)}
 					symbolMarginLeft={vw(8.5)}
@@ -89,6 +91,8 @@ class MainPage extends Component {
 					buttonMarginLeft={vw(20)}
 					buttonWidth={vw(10)}
 					buttonHeight={vw(10)}
+					panelLayout={'none'}
+					panelType={'none'}
 					symbolFontsize={vw(13)}
 					symbolMarginTop={vw(10)}
 					symbolMarginLeft={vw(8.5)}
@@ -136,6 +140,8 @@ class MainPage extends Component {
 					buttonMarginLeft={vw(32.5)}
 					buttonWidth={vw(10)}
 					buttonHeight={vw(10)}
+					panelLayout={'none'}
+					panelType={'none'}									
 					symbolFontsize={vw(13.5)}
 					symbolMarginTop={vw(13)}
 					symbolMarginLeft={vw(14.7)}
@@ -157,6 +163,8 @@ class MainPage extends Component {
 						buttonMarginLeft={vw(70)}
 						buttonWidth={vw(10)}
 						buttonHeight={vw(9)}
+						panelLayout={'horizontal'}
+						panelType={'chain'}					
 						symbolFontsize={vw(11)}
 						symbolMarginTop={vw(-3.2)}
 						symbolMarginLeft={vw(35)}
@@ -174,6 +182,8 @@ class MainPage extends Component {
 						buttonMarginLeft={vw(0)}
 						buttonWidth={vw(10)}
 						buttonHeight={vw(10)}
+						panelLayout={'vertical'}
+						panelType={'tie'}
 						symbolFontsize={vw(12)}
 						symbolMarginTop={vw(11)}
 						symbolMarginLeft={vw(-0.9)}
@@ -189,7 +199,9 @@ class MainPage extends Component {
 						buttonMarginTop={vw(12)} 
 						buttonMarginLeft={vw(0)}
 						buttonWidth={vw(10)}
-						buttonHeight={vw(5)} 
+						buttonHeight={vw(5)}
+						panelLayout={'vertical'} 
+						panelType={'wrist'}
 						symbolFontsize={vw(10)}
 						symbolMarginTop={vw(1.5)}
 						symbolMarginLeft={vw(0)}
@@ -206,6 +218,8 @@ class MainPage extends Component {
 						buttonMarginLeft={vw(70)}
 						buttonWidth={vw(10)}
 						buttonHeight={vw(10)}
+						panelLayout={'none'}
+						panelType={'none'}
 						symbolFontsize={vw(13)}
 						symbolMarginTop={vw(5.5)}
 						symbolMarginLeft={vw(35)}
@@ -222,6 +236,8 @@ class MainPage extends Component {
 						buttonMarginLeft={vw(17)}
 						buttonWidth={vw(8)}
 						buttonHeight={vw(8)}
+						panelLayout={'none'}
+						panelType={'none'}
 						symbolFontsize={vw(13)}
 						symbolMarginTop={vw(6)}
 						symbolMarginLeft={vw(7)}
@@ -238,6 +254,8 @@ class MainPage extends Component {
 						buttonMarginLeft={vw(27)}
 						buttonWidth={vw(8)}
 						buttonHeight={vw(8)}
+						panelLayout={'none'}
+						panelType={'none'}
 						symbolFontsize={vw(13)}
 						symbolMarginTop={vw(6)}
 						symbolMarginLeft={vw(11)}
@@ -254,6 +272,8 @@ class MainPage extends Component {
 						buttonMarginLeft={vw(15)}
 						buttonWidth={vw(5)}
 						buttonHeight={vw(10)}
+						panelLayout={'horizontal'}
+						panelType={'ankle'}
 						symbolFontsize={vw(10)}
 						symbolMarginTop={vw(-1.8)}
 						symbolMarginLeft={vw(4.8)}
